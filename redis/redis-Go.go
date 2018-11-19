@@ -10,6 +10,7 @@ func main() {
 		fmt.Println(err)
 		return
 	}
+	
 	c.Do("AUTH", "12589")
 	c.Do("SET", "a", 134)
 	a, err := redis.Int(c.Do("GET", "a"))

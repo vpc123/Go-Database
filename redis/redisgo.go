@@ -12,7 +12,7 @@ func main() {
 
 	if err != nil {
 		fmt.Println("Connect to redis error", err)
-		return
+		returna
 	}
 	c.Do("AUTH", "12589")
 	defer c.Close()
